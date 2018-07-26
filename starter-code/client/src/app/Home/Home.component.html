@@ -1,0 +1,6 @@
+<p>
+  Home works!
+</p>
+<div *ngFor="let entry of entries">
+  <a [routerLink]="['journal-entries',entry._id]">{{entry.title}} - {{entry.date | date:'short'}}</a>
+</div>
